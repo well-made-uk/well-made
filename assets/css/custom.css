@@ -1,0 +1,62 @@
+:root {
+  --gc-accent: #fece2f;
+  --gc-secondary: #E55812;
+  --gc-light: white;
+  --gc-dark: black;
+}
+
+body {
+  background:var(--gc-accent);
+}
+
+.content .container {
+  background:var(--gc-light);
+  padding:0 4rem 2rem 4rem;
+  border-radius:2rem;
+}
+
+.colorscheme-dark .content .container {
+  background:var(--gc-dark)
+}
+
+article h1:not(.title)::before, article h2::before, article h3::before, article h4::before {
+  padding-right:8px;
+  color:var(--gc-secondary);
+}
+
+article h1:not(.title):before {
+  content:'#';
+}
+
+article h2:before {
+  content:'##';
+}
+
+article h3:before {
+  content:'###';
+}
+
+article h4:before {
+  content:'####';
+}
+
+h1 .heading-link, h2 .heading-link, h3 .heading-link, h4 .heading-link, h5 .heading-link, h6 .heading-link, .list ul li .title:hover, .list ul li .title:focus, .footer a, a, .centered .about ul li a:hover, .centered .about ul li a:focus {
+  color:var(--gc-secondary);
+}
+
+.navigation {
+  margin-top:1rem;
+}
+
+.post-meta .categories {
+  display:inline;
+  padding-right:8px;
+}
+
+.post-meta .tags {
+  display:inline;
+}
+
+.content .post .post-meta .tags .tag {
+  padding:0.1rem 0.7rem;
+}

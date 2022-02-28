@@ -1,0 +1,18 @@
+baseURL = 'https://well-made.uk/'
+title = 'Well-made.uk'
+description = 'well-made.uk blog'
+
+[params]
+  customCSS = ["css/custom.min.css"]
+  # customJS = ["js/custom.js"]
+
+# Menu links
+[[menu.main]]
+  name = "Blog"
+  weight = 1
+  url  = "/"
+
+[[menu.main]]
+  name = "Free"
+  weight = 1
+  url  = "free/"

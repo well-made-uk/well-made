@@ -1,0 +1,57 @@
+baseURL = 'https://well-made.uk/'
+title = 'Well-made.uk'
+theme = "coder"
+languagecode = "en"
+defaultcontentlanguage = "en"
+
+paginate = 20
+
+pygmentsstyle = "bw"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+# disqusShortname = "yourdiscussshortname"
+
+[params]
+  author = "Ben Wilde"
+  info = "Front-end web developer"
+  description = "Well-made websites by Ben Wilde"
+  keywords = "blog,developer,personal"
+  # avatarurl = "images/avatar.jpg"
+
+  favicon_32 = "/img/favicon-32x32.png"
+  favicon_16 = "/img/favicon-16x16.png"
+
+  since = 2019
+
+  enableTwemoji = false
+
+  colorScheme = "auto"
+  hidecolorschemetoggle = false
+
+  customCSS = ["css/custom.min.css"]
+  # customJS = ["js/custom.js"]
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
+
+# Social links
+[[params.social]]
+  name = "Github"
+  icon = "fa fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/johndoe/"
+
+# Menu links
+[[menu.main]]
+  name = "Blog"
+  weight = 1
+  url  = "posts/"
+
+[[menu.main]]
+  name = "Google Policy"
+  weight = 1
+  url  = "google-free/"
