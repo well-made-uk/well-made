@@ -151,6 +151,10 @@ ul.pagination {
   margin:3.2rem 0 2rem 0;
 }
 
+ul.pagination li {
+  padding:0 3px;
+}
+
 .content article header {
   margin-top:unset;
   margin-bottom:5rem;
