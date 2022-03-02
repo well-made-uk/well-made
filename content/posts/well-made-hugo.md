@@ -16,7 +16,9 @@ In general, I produce very low code sites using technologies like Webflow and Bu
 
 [Hugo, the static site generator](https://gohugo.io/), provides markup to stick it all together and make a site from it all. This is great, because it means I can work in [Atom](https://atom.io/), my favourite code editor, and benefit from all the plugins there to code websites really nicely.
 
-## Using Hugo
+Before I continue.. [you can view all the code for this website publicly here](https://github.com/well-made-uk/well-made).
+
+## Uses of Hugo
 
 I think that Hugo will be especially useful in the following use-cases:
 

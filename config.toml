@@ -19,8 +19,8 @@ pygmentscodefencesguesssyntax = true
   keywords = "blog,developer,personal"
   avatarurl = "/img/avatar-comp.jpg"
 
-  favicon_32 = "/img/favicon-32x32.png"
-  favicon_16 = "/img/favicon-16x16.png"
+  favicon_32 = "/img/avatar-comp.jpeg"
+  favicon_16 = "/img/avatar-comp.jpeg"
 
   since = 2019
 
