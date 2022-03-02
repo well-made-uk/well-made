@@ -1,0 +1,58 @@
+<section class="container home centered">
+  <div class="about">
+    {{ if and (isset .Site.Params "avatarurl") (not (isset .Site.Params "gravatar")) }}
+      {{ with .Site.Params.avatarURL }}
+        <div class="avatar"><img src="{{ . | relURL }}" alt="avatar"></div>
+      {{ end }}
+    {{ end }}
+    {{ with .Site.Params.gravatar }}
+      <div class="avatar"><img src="https://www.gravatar.com/avatar/{{md5 .}}?s=240&d=mp" alt="gravatar"></div>
+    {{ end }}
+    <h1>I'm {{ .Site.Params.author }}.</h1>
+    {{ if reflect.IsSlice .Site.Params.info }}
+    <h2>{{ range .Site.Params.info }}{{.}}<br>{{ end}}</h2>
+    {{ else }}
+    <h2>{{ .Site.Params.info }}</h2>
+    {{ end }}
+    <div class="maker">
+    <p>The internet is becoming more difficult to use, more intrusive, and more harmful for the environment.</p>
+    <p>I build better websites: code-free, Google-free, fast, accessible, secure, and with an extremely low carbon footprint. Let's make a better future for the internet.</p>
+    </div>
+    {{ with .Site.Params.social }}
+    <ul>
+      {{ range sort . "weight" }}
+        {{ if .icon }}
+          <li>
+            <a href="{{ .url | safeURL }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}"{{ end }} {{ if .target }}target="{{ .target }}"{{ end }} {{ if .type }}type="{{ .type }}"{{ end }}>
+              <i class="{{ .icon }}" aria-hidden="true"></i>
+            </a>
+          </li>
+        {{ else }}
+          <li>
+            <a href="{{ .url | safeURL }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}"{{ end }} {{ if .target }}target="{{ .target }}"{{ end }}>{{ .name }}</a>
+          </li>
+        {{ end }}
+      {{ end }}
+    </ul>
+    {{ end }}
+  </div>
+  <div class="links">
+    <h2>Projects <a style="font-size:1.3rem;" href="/projects"><i class="fa fa-plus-circle"></i></a></h2>
+    <ul>
+    {{ range first 3 (where .Site.RegularPages "Type" "projects") }}
+      <li><a class="title-link" href="{{ .Permalink | safeURL }}">
+        {{ title (i18n (lower .Title)) | default .Title }}
+      </a></li>
+    {{ end }}
+    </ul>
+
+    <h2>Blog <a style="font-size:1.3rem;" href="/posts"><i class="fa fa-plus-circle"></i></a></h2>
+    <ul>
+    {{ range first 3 (where .Site.RegularPages "Type" "posts") }}
+      <li><a class="title-link" href="{{ .Permalink | safeURL }}">
+        {{ title (i18n (lower .Title)) | default .Title }}
+      </a></li>
+    {{ end }}
+    </ul>
+  </div>
+</section>

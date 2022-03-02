@@ -4,9 +4,9 @@ theme = "coder"
 languagecode = "en"
 defaultcontentlanguage = "en"
 
-paginate = 20
+paginate = 12
 
-pygmentsstyle = "bw"
+pygmentsstyle = "colorful"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
@@ -14,10 +14,10 @@ pygmentscodefencesguesssyntax = true
 
 [params]
   author = "Ben Wilde"
-  info = "Front-end web developer"
+  info = "I build well-made websites."
   description = "Well-made websites by Ben Wilde"
   keywords = "blog,developer,personal"
-  # avatarurl = "images/avatar.jpg"
+  avatarurl = "/img/avatar-comp.jpg"
 
   favicon_32 = "/img/favicon-32x32.png"
   favicon_16 = "/img/favicon-16x16.png"
@@ -38,20 +38,18 @@ pygmentscodefencesguesssyntax = true
   tag = "tags"
   author = "authors"
 
-# Social links
-[[params.social]]
-  name = "Github"
-  icon = "fa fa-github fa-2x"
-  weight = 1
-  url = "https://github.com/johndoe/"
-
 # Menu links
 [[menu.main]]
   name = "Blog"
   weight = 1
   url  = "posts/"
 
+  [[menu.main]]
+    name = "Projects"
+    weight = 5
+    url  = "projects/"
+
 [[menu.main]]
   name = "Google Policy"
-  weight = 1
+  weight = 10
   url  = "google-free/"

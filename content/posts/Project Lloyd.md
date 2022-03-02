@@ -1,6 +1,6 @@
 +++
 draft = false
-date = 2022-02-05T14:28:37Z
+date = 2022-02-28T14:28:37Z
 title = "Project Lloyd"
 description = "The year of silliness and love."
 slug = "Lloyd"
@@ -10,26 +10,41 @@ externalLink = ""
 series = []
 +++
 
-This is a re-write of a post dated 09/01/2022.
+{{< notice info Update>}}This post was updated and re-published. The original post was published 09/01/2022.{{< /notice >}}
 
-I previously mentioned Project Lloyd, a  site generator that helps me produce beautifully fast and simple static sites from Webflow.
-
-The idea came from a little app called [Cryolayer](https://cryolayer.com/), which does a lot of what I wanted to do, but it wasn't quite what I was looking for - and I wanted something I could fork and edit anyway.
+Announcing Project Lloyd: a static-site generator for Webflow, powered by Netlify.
 
 ## What Lloyd does
-### Index-building
-Project Lloyd scrapes the Weblow site, looks at the sitemap and all the scripts and styles linked in <head>, and then scours it for any internal or relative links. Once it's built an index of the site and any linked files, it parses everything it can.
+Lloyd downloads Webflow websites, uses several postbuild plugins to optimise the site, and then re-deploys it on Netlify. This makes the website much faster.
 
-### Parsing: XML, HTML, and CSS
-I created three little plugins to parse the three kinds of file. Why do I need to parse them? Firstly, I need to replace URLs and prettify them a bit. Beyond that, there were a number of improvements I wanted to make. I added build plugins for WebP conversion and optimisation (though it's disabled by default), critical inlining (still working on that one..), font subsetting and more.
+It's super simple: it just takes the Webflow auto-generated URL and your destination domain, and the rest is taken care of by the build script. It also means that no Webflow site plan is needed.
 
-I built all of this with Yarn, so that when I deploy this in Netlify, all of the plugins and dependencies are checked and verified, and I can create a log of every build. Lloyd can take Webflow API triggers, so every time I update something in Webflow, Netlify runs Lloyd again.
+Netlify's global CDN means that content is delivered from a datacenter nearby, instead of one central server. Netlify is free in most cases, only charging for advanced features like form management and heavy usage.
+
+### Optimisation
+Images are compressed and resized to exactly the right size, so no unnecessary image data is downloaded. Optionally, bitmaps can also be converted to WebP.
+
+### Subfont
+Subfont creates strict font subsets (only characters used on the page are loaded) and optimises the way the fonts are loaded.
 
 ### Analytics
-Another neat addition to Lloyd is that it automatically adds every built site to my Analytics platform. I use Plausible, which is anonymous and GDPR-compliant, which means that my clients can have a really neat analytics tool without needing to go anywhere near Google or add a privacy statement to their website.
+Privacy-friendly analytics, courtesy of Plausible, is automatically added as a [Google-free](/google-free) alternative to Analytics.
 
-### Netlify Plugins
-During the build, I can also ask Netlify to run the resulting code through their own build plugins. I'm currently using the Subfont plugin to optimise font loading and subsetting, but I'll be looking at more options in future.
+### Inlining
+Critical CSS is inlined by default, meaning quicker first paints.
 
-## Lloyd in action
-At the time of posting, there are two static sites using Lloyd: well-made.uk, and NASHorn (a German healthcare app, and client of mine). Have a look and see what's going on there. You can also see the analytics for well-made.uk here.
+## The results
+Here's an example:
+- [Triple Whale (Unoptimised, hosted on Webflow)](https://trytriplewhale.com/)
+- [Triple Whale (Deployed using Project Lloyd)](https://triple-whale-lloyd.netlify.app/)
+
+The websites are identical, apart from new content on the live site since the Project Lloyd deploy in Jan 2022, and the optimisations run by Project Lloyd.
+
+Running Lighthouse on the homepage gives the following results:
+- Original site performance: 26
+- Lloyd version performance: 78
+
+A lot of what is required to improve site performance is taken care of by Lloyd, and I only had to change 2 lines of code to get there. This is without touching _anything_ on the site - so imagine the results one could get with on-site optimisation, too.
+
+## Availability
+Project Lloyd is compatible with all Webflow sites except for those which use the built-in eCommerce system. If you have an eligible Webflow site, let me know and we can give it a go with Lloyd - it's totally free and could save you a lot of money on Webflow site plans. I'll also make the code publicly available once I've made my currently planned updates.

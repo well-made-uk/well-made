@@ -1,20 +1,16 @@
 baseURL = 'https://well-made.uk/'
 title = 'Well-made.uk'
-theme = "coder"
-languagecode = "en"
-defaultcontentlanguage = "en"
-
-paginate = 20
-
-pygmentsstyle = "bw"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
-
-# disqusShortname = "yourdiscussshortname"
+description = 'well-made.uk blog'
 
 [params]
   customCSS = ["css/custom.min.css"]
   # customJS = ["js/custom.js"]
+
+  [taxonomies]
+    category = "categories"
+    series = "series"
+    tag = "tags"
+    author = "authors"
 
 # Menu links
 [[menu.main]]

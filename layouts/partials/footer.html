@@ -1,0 +1,20 @@
+<footer class="footer">
+  <section class="container">
+    <p>Well-made is made well by Ben Wilde, a web developer that makes well-made websites.</p>
+    <p>©
+    {{ if (and .Site.Params.since (lt .Site.Params.since now.Year)) }}
+      {{ .Site.Params.since }} -
+    {{ end }}
+    {{ now.Year }}
+    {{ with .Site.Params.author }} {{ . }} {{ end }}
+    ·
+    {{ if (and .Site.Params.license) }}
+      {{ i18n "licensed_under" }} {{ .Site.Params.license | safeHTML }}
+    ·
+    {{ end }}
+    <a href="mailto:ben-wilde@hey.com">Email</a> · <a href="http://t.me/wellmadeuk">Telegram</a>
+    {{ if (and .Site.Params.commit .GitInfo) }}
+      [<a href="{{ .Site.Params.commit }}/{{ .GitInfo.Hash }}">{{ .GitInfo.AbbreviatedHash }}</a>]
+    {{ end }}</p>
+  </section>
+</footer>
