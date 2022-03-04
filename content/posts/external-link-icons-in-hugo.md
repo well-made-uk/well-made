@@ -10,7 +10,7 @@ externalLink = ""
 series = []
 +++
 
-I just launched a little update to website that includes a markdown hook, adding an icon to all external links and making them open in a new tab (safely). I'm sharing the markdown hook here.
+I just launched a little update to my website that includes a markdown hook, adding an icon to all external links and making them open in a new tab (safely). I'm sharing the markdown hook here.
 
 [*/layouts/_default/_markup/render-link.html*](https://github.com/well-made-uk/well-made/tree/master/layouts/_default/_markup)
 ```
