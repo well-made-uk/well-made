@@ -38,7 +38,7 @@
   </div>
   <div class="links">
     <div class="projects">
-      <h2>Projects <a style="font-size:1.3rem;" href="/projects"><i class="fa fa-plus-circle"></i></a></h2>
+      <h2>Projects <a title="Projects List" style="font-size:1.3rem;" href="/projects"><i class="fa fa-plus-circle"></i></a></h2>
       <ul>
       {{ range first 3 (where .Site.RegularPages "Type" "projects") }}
         <li><a class="title-link" href="{{ .Permalink | safeURL }}">
@@ -48,7 +48,7 @@
       </ul>
     </div>
     <div class="blog">
-      <h2>Blog <a style="font-size:1.3rem;" href="/posts"><i class="fa fa-plus-circle"></i></a></h2>
+      <h2>Blog <a title="Blog Posts List" style="font-size:1.3rem;" href="/posts"><i class="fa fa-plus-circle"></i></a></h2>
       <ul>
       {{ range first 3 (where .Site.RegularPages "Type" "posts") }}
         <li><a class="title-link" href="{{ .Permalink | safeURL }}">
