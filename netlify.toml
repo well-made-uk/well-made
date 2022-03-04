@@ -33,3 +33,12 @@ HUGO_ENABLEGITINFO = "true"
 from = "/npmjs/*"
 to = "/npmjs/"
 status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+  cache-control = '''
+  max-age=31536000,
+  no-cache,
+  no-store,
+  must-revalidate'''
