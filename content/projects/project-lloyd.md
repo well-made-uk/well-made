@@ -11,7 +11,7 @@ series = []
 featuredImage = ""
 +++
 
-This is the "official" post to accompany the release of Project Lloyd, a static site generator that takes a [Webflow](https://webflow.io) site and deploys it on [Netlify](https://netlify.app).
+This is the "official" post to accompany the release of [Project Lloyd](https://github.com/well-made-uk/project-lloyd), a static site generator that takes a [Webflow](https://webflow.io) site and deploys it on [Netlify](https://netlify.app).
 
 ## Rationale
 I started building Project Lloyd in 2021 for the following reasons:
