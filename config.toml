@@ -44,12 +44,17 @@ pygmentscodefencesguesssyntax = true
   weight = 1
   url  = "posts/"
 
-  [[menu.main]]
-    name = "Projects"
-    weight = 5
-    url  = "projects/"
+[[menu.main]]
+  name = "Projects"
+  weight = 5
+  url  = "projects/"
 
 [[menu.main]]
   name = "Google Policy"
   weight = 10
   url  = "google-free/"
+
+[[menu.main]]
+  name = "Hire Me"
+  weight = 1000
+  url  = "https://app.hellobonsai.com/f/fde64b9ccf00bdb"
