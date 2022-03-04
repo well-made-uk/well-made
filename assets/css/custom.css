@@ -172,3 +172,8 @@ ul.pagination li {
 .highlight > pre {
   background:unset!important;
 }
+
+.navigation-item:last-child {
+  background:white;
+  border-radius:9px;
+}
