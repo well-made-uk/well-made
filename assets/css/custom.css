@@ -1,8 +1,12 @@
-:root {
+body {
   --gc-accent: #fece2f;
   --gc-secondary: #D43900;
   --gc-light: white;
   --gc-dark: black;
+}
+
+body.colorscheme-dark {
+  --gc-secondary: #42a5f5;
 }
 
 body {
@@ -220,4 +224,18 @@ ul.pagination li {
   .links .blog, .links .projects {
     width:100%;
   }
+}
+
+.footer p {
+  line-height:1.5;
+}
+
+.footer a {
+  background:white;
+  padding: 0.1em 0.4em;
+  border-radius:4px;
+}
+
+.colorscheme-dark .footer a {
+  background:black;
 }
