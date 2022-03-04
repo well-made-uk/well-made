@@ -94,6 +94,6 @@ The theme takes care of all the HTML page templates, but you can add a custom CS
 
 I'm using Hugo for well-made, for now. I love that I can work in Atom and Github, for easy coding and versioning. The DOM is human-made, rather than generate as in Webflow, so it makes more sense and it's generally smaller, leading to smaller files and better performance. I get complete control over the code, so I can do advanced accessibility and best practice stuff. My chosen theme had a bunch of stuff, like Pygments and dark mode, built in.
 
-Looking at Wappalyzer, I've only got two technologies on here: Hugo, and Core JS. This makes me happy. While it's not a certain sign of a well-made website, it's certainly a good one.
+Looking at Wappalyzer, I've only got two technologies on here: Hugo, and Netlify. This makes me happy. While it's not a certain sign of a well-made website, it's certainly a good one.
 
 ![Wappalyzer's analysis of well-made.uk](/img/well-made-wappalyzer.jpg)
