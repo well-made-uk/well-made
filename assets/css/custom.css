@@ -239,3 +239,27 @@ ul.pagination li {
 .colorscheme-dark .footer a {
   background:black;
 }
+
+.tech-logo object {
+  max-width:80px;
+  height:30px;
+  padding:4px 8px;
+  pointer-events:none;
+}
+
+.tech-logo {
+  height:34px;
+  opacity:0.5;
+  filter:saturate(0);
+  border:2px solid gray;
+  display:inline-block;
+  padding:0;
+  margin:0;
+  border-radius:4px;
+}
+
+.tech-logo:hover {
+  opacity:1;
+  border:2px solid var(--gc-accent);
+  filter:saturate(1);
+}
