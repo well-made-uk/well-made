@@ -1,9 +1,9 @@
 +++
 draft = false
 date = 2022-02-05T14:28:37Z
-title = "Bar and Craft"
+title = "Whiskey Hunt"
 description = "Find rare and fine whiskeys near you"
-slug = "barandcraft"
+slug = ["barandcraft","whiskeyhunt"]
 tags = ["Bubble","Webflow"]
 categories = ["Apps"]
 externalLink = ""
@@ -13,4 +13,20 @@ featuredImage = "/img/barandcraft-screen.jpg"
 
 Bar and Craft's Whiskey Hunt is a directory of rare and fine whiskeys. [Visit whiskey hunt here.](https://www.barandcraft.com/tools/whiskey-hunt)
 
-I built Whiskey Hunt in Bubble, with magic login, data privacy and redundancy management built-in.
+I built Whiskey Hunt in Bubble. It's a fully-featured app:
+- Algolia-powered search
+- Autocomplete & geolocate
+- Magic login emails
+- Account & listing management
+- Website integration
+- Responsive design
+- PWA compatible
+
+It's also really tiny and fun to use.
+
+## Bubble Workflows
+The functionality is handled with no code by Bubble's workflows:
+
+![Bubble's workflow view](/img/bubble-workflows.jpg "Bubble's workflows require no code.")
+
+This means that the clients themselves can make changes and edits in future. That's a part of what makes a well-made website: making sure that the app is usable by all its intended users, including the client.
