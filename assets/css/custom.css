@@ -262,3 +262,14 @@ ul.pagination li {
   border:2px solid var(--gc-accent);
   filter:saturate(1);
 }
+
+.content figure {
+  background:#fafafa;
+  padding:1.5em 1.5em 1em 1.5em;
+  text-align:left;
+  border-radius:9px;
+}
+
+.content figcaption {
+  font-style:italic;
+}
