@@ -241,13 +241,13 @@ ul.pagination li {
 }
 
 .tech-logo object {
-  height:30px;
+  height:26px;
   padding:4px 8px;
   pointer-events:none;
 }
 
 .tech-logo {
-  height:34px;
+  height:30px;
   opacity:0.5;
   filter:saturate(0);
   border:2px solid gray;
