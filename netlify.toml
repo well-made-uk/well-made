@@ -37,8 +37,12 @@ status = 200
 [[headers]]
   for = "/*"
   [headers.values]
-  cache-control = '''
+  cache-control = '',
   max-age=31536000,
   no-cache,
   no-store,
   must-revalidate'''
+  [headers.values]
+  Content-Security-Policy = "default-src 'self';"
+  [headers.values]
+  X-Frame-Options = "DENY"
