@@ -37,7 +37,7 @@ status = 200
 [[headers]]
   for = "/*"
   [headers.values]
-  cache-control = '',
+  cache-control = '''
   max-age=31536000,
   no-cache,
   no-store,
