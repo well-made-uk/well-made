@@ -1,9 +1,9 @@
 +++
 draft = false
 date = 2022-03-02T14:28:37Z
-title = "Well-made.uk 2022"
+title = "Well-made.uk"
 description = "Well-made is made well by Ben Wilde, a web developer that makes well-made websites."
-slug = "well-made-hugo"
+slug = "well-made"
 tags = ["Hugo","Static Sites"]
 categories = ["Websites"]
 externalLink = ""
