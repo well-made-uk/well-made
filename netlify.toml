@@ -42,7 +42,11 @@ status = 200
   no-cache,
   no-store,
   must-revalidate'''
+[[headers]]
+  for = "/*"
   [headers.values]
   Content-Security-Policy = "default-src 'self';"
+[[headers]]
+  for = "/*"
   [headers.values]
   X-Frame-Options = "DENY"
