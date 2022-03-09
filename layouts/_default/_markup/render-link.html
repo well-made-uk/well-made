@@ -13,4 +13,4 @@
     {{- end -}}
   {{- end -}}
   {{- if and (strings.HasPrefix .Destination "http") (not (strings.HasPrefix $desturl.Host $baseurl.Host)) }} target="_blank" rel="external nofollow noopener"{{ end -}}
-  >{{ .Text | safeHTML }}{{- if and (strings.HasPrefix .Destination "http") (not (strings.HasPrefix $desturl.Host $baseurl.Host)) }}<i class="fa fa-external-link"></i>{{ end -}}</a>
+  >{{ .Text | safeHTML }}{{- if and (strings.HasPrefix .Destination "http") (not (strings.HasPrefix $desturl.Host $baseurl.Host)) }}{{ end -}}</a>
