@@ -86,6 +86,7 @@ h1 .heading-link, h2 .heading-link, h3 .heading-link, h4 .heading-link, h5 .head
   flex:1;
   border-left:1px solid darkgray;
   display:flex;
+  flex-direction: column;
 }
 
 .avatar img {
