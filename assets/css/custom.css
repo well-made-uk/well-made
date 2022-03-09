@@ -48,7 +48,7 @@ article h4:before {
   content:'####';
 }
 
-h1 .heading-link, h2 .heading-link, h3 .heading-link, h4 .heading-link, h5 .heading-link, h6 .heading-link, .list ul li .title:hover, .list ul li .title:focus, .footer a, a, .centered .about ul li a:hover, .centered .about ul li a:focus {
+h1 .heading-link, h2 .heading-link, h3 .heading-link, h4 .heading-link, h5 .heading-link, h6 .heading-link, .list li .title:hover, .list li .title:focus, .footer a, a, .about li a:hover, .about li a:focus {
   color:var(--gc-secondary);
 }
 
@@ -69,27 +69,34 @@ h1 .heading-link, h2 .heading-link, h3 .heading-link, h4 .heading-link, h5 .head
   padding:0.1rem 0.7rem;
 }
 
-.home .about, .home .links {
+.home .links, .home .about {
+  padding-left: 4rem;
   text-align:left;
+  margin:0;
+  padding:10px;
+  width:100%;
+  border:unset;
 }
 
 .home .about {
-  padding-right: 4rem;
+  flex:3;
 }
 
 .home .links {
-  padding-left: 4rem;
+  flex:1;
+  border-left:1px solid darkgray;
+  display:flex;
 }
 
 .avatar img {
   width:30rem;
 }
 
-.list ul li .title {
+.list li .title {
   flex:3;
 }
 
-.list ul li .category {
+.list li .category {
   display: inline-block;
   padding: 0.1rem 0.7rem;
   background-color: #e0e0e0;
@@ -127,15 +134,6 @@ h1 .heading-link, h2 .heading-link, h3 .heading-link, h4 .heading-link, h5 .head
   flex:unset;
 }
 
-.home .about {
-  flex:3;
-}
-
-.home .links {
-  flex:1;
-  border-left:1px solid darkgray;
-}
-
 .home .links li, .home .links ul {
   margin:0;
   padding:0;
@@ -151,11 +149,11 @@ h1 .heading-link, h2 .heading-link, h3 .heading-link, h4 .heading-link, h5 .head
   margin-bottom:3.5rem;
 }
 
-ul.pagination {
+.pagination {
   margin:3.2rem 0 2rem 0;
 }
 
-ul.pagination li {
+.pagination li {
   padding:0 3px;
 }
 
@@ -194,17 +192,6 @@ ul.pagination li {
   
   .home {
     flex-direction:column;
-  }
-  
-  .home .about, .home .links {
-    margin:0;
-    padding:10px;
-    width:100%;
-    border:unset;
-  }
-  
-  .home .links {
-    display:flex;
   }
   
   .links .blog, .links .projects {
