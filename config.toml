@@ -1,6 +1,6 @@
 baseURL = 'https://well-made.uk/'
 title = 'Well-made.uk'
-theme = "coder"
+theme = "hugo-coder"
 languagecode = "en"
 defaultcontentlanguage = "en"
 
@@ -29,7 +29,7 @@ pygmentscodefencesguesssyntax = true
   colorScheme = "auto"
   hidecolorschemetoggle = false
 
-  customCSS = ["css/custom.min.css"]
+  # customCSS = ["css/custom.min.css"]
   # customJS = ["js/custom.js"]
 
 [taxonomies]

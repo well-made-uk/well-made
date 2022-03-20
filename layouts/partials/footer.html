@@ -12,7 +12,7 @@
       {{ i18n "licensed_under" }} {{ .Site.Params.license | safeHTML }}
     ·
     {{ end }}
-    <a href="mailto:ben@well-made.uk">Email</a> · <a href="https://github.com/well-made-uk">GitHub</a>
+    <a href="mailto:ben@well-made.uk">Email</a> · <a  target='_blank' rel='noopener nofollow' href="https://github.com/well-made-uk">GitHub</a>
     {{ if (and .Site.Params.commit .GitInfo) }}
       [<a href="{{ .Site.Params.commit }}/{{ .GitInfo.Hash }}">{{ .GitInfo.AbbreviatedHash }}</a>]
     {{ end }}</p>
