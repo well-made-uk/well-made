@@ -37,19 +37,9 @@ status = 200
 [[headers]]
   for = "/*"
   [headers.values]
-  cache-control = '''
-  max-age=31536000,
-  no-cache,
-  no-store,
-  must-revalidate'''
-[[headers]]
-  for = "/*"
-  [headers.values]
+  cache-control = '''max-age=31536000,no-cache,no-store,must-revalidate'''
+  content-language = "en-GB"
   X-Frame-Options = "SAMEORIGIN"
   X-XSS-Protection = "0"
   X-Content-Type-Options = "nosniff"
   Content-Security-Policy = "default-src 'self'; style-src 'unsafe-inline' 'self'; form-action 'self'; script-src 'unsafe-inline' 'self'; connect-src 'self'; img-src 'self' data:; base-uri 'self';"
-[[headers]]
-  for = "/*"
-  [headers.values]
-  content-language = "en-GB"
