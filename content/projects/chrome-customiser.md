@@ -34,7 +34,7 @@ Simply the extension name/description, a version number, and the manifest versio
 Under ``"manifest_version"``, we need to add a section for ``content_scripts``, which is an array of objects.
 
 ``` json
-content_scripts": [{
+"content_scripts": [{
     "matches": ["*://*.youtube.com/*"],
     "css": ["css/youtube.css"],
     "js": ["js/youtube.js"]
