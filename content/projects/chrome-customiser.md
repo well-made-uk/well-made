@@ -11,7 +11,7 @@ series = []
 featuredImage = ""
 +++
 
-[View the project here.]('https://github.com/well-made-uk/chrome-customiser')
+[View the project here.](https://github.com/well-made-uk/chrome-customiser)
 
 Nothing spectacular - I just wanted to add some custom CSS to Brave (a Chromium-based browser) to remove age elements on my frequently-visited sites
 
@@ -43,4 +43,4 @@ content_scripts": [{
 
 In this example, we're loading two files, youtube.css, and youtube.js, whenever the tab URL matches the one above (the * wildcard symbols mean that it'll still match on subdomains, regardless of whether www is present, it's http or https, etc.)
 
-The referenced files are completely standard css and js files, and they don't need to be minified since they're being loaded locally, not from a server. [View my setup here]('https://github.com/well-made-uk/chrome-customiser'), and play with it yourself. Feel free to pull the project and make your own version.
+The referenced files are completely standard css and js files, and they don't need to be minified since they're being loaded locally, not from a server. [View my setup here](https://github.com/well-made-uk/chrome-customiser), and play with it yourself. Feel free to pull the project and make your own version.
