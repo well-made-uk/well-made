@@ -31,7 +31,7 @@ It's a really simple thing to do - you just need a ``manifest.json`` file in the
 
 Simply the extension name/description, a version number, and the manifest version you're using (3 is the latest version at time of writing and highly recommended).
 
-Under ``"manifest_version"``, we need to add a section for ``content_scripts``, which is an array of objects.
+Under ``"manifest_version"``, we need to add a section for ``"content_scripts"``, which is an array of objects.
 
 ``` json
 "content_scripts": [{
