@@ -20,7 +20,7 @@ The main issue was YouTube, which I find really useful for informational purpose
 ## Making a Chrome Extension
 It's a really simple thing to do - you just need a ``manifest.json`` file in the root folder. That contains a few bits of housekeeping:
 
-```
+``` json
 {
   "name": "Chrome Customiser",
   "description": "Build an Extension!",
@@ -33,7 +33,7 @@ Simply the extension name/description, a version number, and the manifest versio
 
 Under ``"manifest_version"``, we need to add a section for ``content_scripts``, which is an array of objects.
 
-```
+``` json
 content_scripts": [{
     "matches": ["*://*.youtube.com/*"],
     "css": ["css/youtube.css"],
