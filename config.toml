@@ -1,60 +1,204 @@
-baseURL = 'https://well-made.uk/'
-title = 'Well-made.uk'
-theme = "personal-site"
-languagecode = "en"
-defaultcontentlanguage = "en"
+baseURL                       = "https://example.com/"
+languageCode                  = "en"
+title                         = "well0made.uk"
+theme                         = "personal-site"
+summaryLength                 = 10
 
-paginate = 12
+[Author] # Used in authorbox
+  name                        = "Ben Wilde"
+  bio                         = ""
+  avatar                      = "img/avatar.webp"
+  job                         = "Software Engineer"
+  gender                      = "male"
+  email                       = "jhon-doe@gmail.com"
 
-pygmentsstyle = "colorful"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
 
-# disqusShortname = "yourdiscussshortname"
+[Params]
+  subTitle                    = "Personal site, Blog, and Portfolio"
+  description                 = "Sebuah catatan dan blog pribadi saya. Saya juga akan membagi tentang pengalaman saya dan teknologi-teknolgi yang saya gunakan/pelajari atau yang sedang populer." # Site Description. Used in meta description
+  images                      = ["img/avatar.webp"]
+  copyright                   = "Wisnuwiry" # Copyright holder, otherwise will use .Site.Title
+  opengraph                   = true # Enable OpenGraph if true
+  twitter_cards               = true # Enable Twitter Cards if true
+  mainSections                = ["post"] # Set main page sections
+  dateFormat                  = "January 02, 2006" # Change the format of dates
+  # customCSS                 = ["css/custom.css"] # Include custom CSS files
+  customJS                    = []
+  mainMenuAlignment           = "right" # Align main menu (desktop version) to the right side
+  authorbox                   = true # Show authorbox at bottom of single pages if true
+  comments                    = true # Enable comments for all site pages
+  related                     = true # Enable Related content for single pages
+  relatedMax                  = 5
+  mathjax                     = false # Enable MathJax for all site pages
+  hideNoPostsWarning          = false # Don't show no posts empty state warning in main page, if true
+  fontUnit                    = "em"
+  largestFontSize             = 2.5
+  smallestFontSize            = 1
+  googleSearchConsole         = ""
+  # GoogleAnalytics             = ""
+  # fb_admins                   =
+  # fb_app_id                   =
+  paginateLength              = 5
+  # adsenseId                   =
 
-[params]
-  author = "Ben Wilde"
-  info = "I build well-made websites."
-  description = "Well-made websites by Ben Wilde"
-  keywords = "blog,developer,personal"
-  avatarurl = "/img/avatar-comp.jpg"
+  # Google Search custom, more info: https://cse.google.com/cse/all
+  customSearchId              = "004021659876411083349:a2ysxpichpc"
 
-  favicon_32 = "/img/well-made square-32.png"
-  favicon_16 = "/img/well-made square-16.png"
+  endMessagePost              = "Wrong content? "
 
-  since = 2019
+  # Link repo to edit content
+  editContentPageLink         = "https://github.com/wisnuwiry/personal-site-demo/edit/master/content/"
 
-  enableTwemoji = false
+  # Formspree form contact id, more info: https://cse.google.com/cse/all
+  formspreeId                 = ""
 
-  colorScheme = "auto"
-  hidecolorschemetoggle = false
 
-  # customCSS = ["css/custom.min.css"]
-  # customJS = ["js/custom.js"]
 
-[taxonomies]
-  category = "categories"
-  series = "series"
-  tag = "tags"
-  author = "authors"
+[Params.Hero]
+  title                       = "A Personal Site By Jhon Doe"
+  desc                        = "Welcome to my Blog :)"
 
-# Menu links
+[Params.Entry]
+  meta                        = ["date", "categories"] # Enable meta fields in given order
+  toc                         = true # Enable Table of Contents
+  tocOpen                     = false # Open Table of Contents block. Optional
+
+[Params.Featured]
+  previewOnly                 = false # Show only preview featured image
+
+[Params.Comments]
+  repository                  = "" # Repository to host your comment, ex: username/repo
+
+# Navigation bar
+[menu]
+
 [[menu.main]]
-  name = "Blog"
-  weight = 1
-  url  = "posts/"
+identifier = "Post"
+pre = "📝"
+url = "/post"
+weight = 1
 
 [[menu.main]]
-  name = "Projects"
-  weight = 5
-  url  = "projects/"
+identifier = "Snippet"
+pre = "⚒️"
+url = "/snippet"
+weight = 2
 
 [[menu.main]]
-  name = "Google Policy"
-  weight = 10
-  url  = "google-free/"
+identifier = "Project"
+pre = "🚧"
+url = "/project"
+weight = 3
 
 [[menu.main]]
-  name = "Hire Me"
-  weight = 1000
-  url  = "https://app.hellobonsai.com/f/fde64b9ccf00bdb"
+identifier = "About"
+pre = "😃"
+url = "/about"
+weight = 4
+
+[[menu.main]]
+identifier = "Contact"
+pre = "🤙"
+url = "/contact"
+weight = 5
+
+[Params.Breadcrumb]
+  enable                      = true # Enable breadcrumb block globally
+  homeText                    = "Home" # Home node text
+
+[Params.Social]
+  twitter                     = "jhon-doe"
+  telegram                    = "jhon-doe"
+# instagram                   = "jhon-doe"
+  linkedin                    = "wisnu-saputra"
+  github                      = "jhon-doe"
+  gitlab                      = "jhon-doe"
+  medium                      = "jhon-doe"
+
+[Params.Share] # Entry Share block
+  facebook                    = true
+  twitter                     = true
+  reddit                      = true
+  telegram                    = true
+  linkedin                    = true
+  pinterest                   = true
+
+# Web App Manifest settings
+# https://www.w3.org/TR/appmanifest/
+# https://developers.google.com/web/fundamentals/web-app-manifest/
+[Params.Manifest]
+  name                        = "Wisnuwiry"
+  shortName                   = "Wisnuwiry"
+  display                     = "standalone"
+  startUrl                    = "/?utm_source=homescreen"
+  backgroundColor             = "#8dc153"
+  themeColor                  = "#1da1f2"
+  description                 = "Personal Site By Wisnuwiry"
+  orientation                 = "portrait"
+  scope                       = "/"
+
+[outputFormats]
+  [outputFormats.MANIFEST]
+    mediaType                 = "application/json"
+    baseName                  = "manifest"
+    isPlainText               = true
+    notAlternative            = true
+
+[outputs]
+  home                        = ["HTML", "RSS", "MANIFEST"]
+
+enableRobotsTXT               = true
+
+# Pagination
+Paginate                      = 3
+
+
+# Code
+[markup]
+  # defaultMarkdownHandler    = "blackfriday"
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList          = true
+      footnote                = true
+      linkify                 = true
+      strikethrough           = true
+      table                   = true
+      taskList                = true
+      typographer             = true
+    [markup.goldmark.parser]
+      attribute               = true
+      autoHeadingID           = true
+      autoHeadingIDType       = "github"
+    [markup.goldmark.renderer]
+      hardWraps               = false
+      unsafe                  = true
+      xhtml                   = false
+  [markup.blackFriday]
+    angledQuotes              = false
+    footnoteAnchorPrefix      = ""
+    footnoteReturnLinkContents= ""
+    fractions                 = true
+    hrefTargetBlank           = false
+    latexDashes               = true
+    nofollowLinks             = false
+    noreferrerLinks           = false
+    plainIDAnchors            = true
+    skipHTML                  = false
+    smartDashes               = true
+    smartypants               = true
+    smartypantsQuotesNBSP     = false
+    taskLists                 = true
+  [markup.highlight]
+    codeFences                = true
+    guessSyntax               = false
+    hl_Lines                  = ""
+    lineNoStart               = 1
+    lineNos                   = false
+    lineNumbersInTable        = false
+    noClasses                 = false
+    style                     = "dracula"
+    tabWidth                  = 4
+  [markup.tableOfContents]
+    endLevel                  = 6
+    ordered                   = false
+    startLevel                = 2
