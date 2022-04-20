@@ -1,4 +1,0 @@
-<li class="project">
-  <span class="date">{{ with .Page.Params.Categories }}{{ partial "taxonomy/categories.html" . }}{{ end }}</span>
-  <a class="title" href="{{ .Params.externalLink | default .RelPermalink }}">{{ .Title }}</a>
-</li>
