@@ -1,0 +1,34 @@
+html {background:#FDCE2E;font-family:'Helvetica', sans-serif;font-size:15px}
+body {
+  background:white;
+  padding:10px 20px 40px 30px;
+  max-width:900px;
+  margin:60px auto;
+  border-radius:8px;
+  box-shadow:
+    2.1px 2.6px 3.6px rgba(0, 0, 0, 0.024),
+    5.8px 7.1px 10px rgba(0, 0, 0, 0.035)
+}
+table {
+  background:white;
+  box-shadow:
+    2.1px 2.6px 3.6px rgba(0, 0, 0, 0.024),
+    5.8px 7.1px 10px rgba(0, 0, 0, 0.035);
+  border-radius:8px;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom:30px
+}
+table,td,th {border: 1px solid #3b3b3b;}
+td:not(:last-child),th {padding: 1em;vertical-align: top;text-align: left}
+td:not([class]):last-child {padding: 0 1em}
+
+h1{font-size:2.8rem}
+h2{font-size:1.8rem;padding-left:15px;border-left:3px solid #FDCE2E;margin-bottom:10px}
+h3{font-size:1.6rem}
+h4{font-size:1.6rem}
+h5{font-size:1.4rem}
+
+dt {font-weight:bold}
+dd:not(:last-child) {margin-bottom:10px}
+main > div {margin-bottom:20px}
