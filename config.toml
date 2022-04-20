@@ -1,6 +1,6 @@
 baseURL = 'https://well-made.uk/'
 title = 'Well-made.uk'
-theme = "hugo-coder"
+theme = "personal-site"
 languagecode = "en"
 defaultcontentlanguage = "en"
 
