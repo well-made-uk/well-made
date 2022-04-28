@@ -20,7 +20,7 @@ summaryLength                 = 10
 [Params]
   subTitle                    = "Well-made websites by Ben Wilde"
   description                 = "I build better websites: low-code, privacy-conscious, fast, accessible, secure, and with an extremely low carbon footprint." # Site Description. Used in meta description
-  images                      = ["img/avatar.webp"]
+  images                      = ["img/avatar.png"]
   copyright                   = "Ben Wilde" # Copyright holder, otherwise will use .Site.Title
   copyrightlink               = "/"
   opengraph                   = true # Enable OpenGraph if true
