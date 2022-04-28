@@ -29,6 +29,6 @@ a[href]:not(:where(
 }
 
 .feed__item {padding:2.5em}
-.post__tag > a:hover {background-color:var(--link-color)}
+.post__tag > a:hover {background-color:var(--link-color)!important}
 
 main .hero {background-image:url('/img/bg.webp');background-size:cover;background-position:center center;background-repeat:no-repeat;background-blend-mode: multiply;}
