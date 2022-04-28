@@ -1,14 +1,11 @@
 +++
-draft = false
-date = 2022-02-05T14:28:37Z
+date = 2022-02-05
 title = "Whiskey Hunt"
 description = "Find rare and fine whiskeys near you"
 slug = ["barandcraft","whiskeyhunt"]
-tags = ["Bubble","Webflow"]
-categories = ["Apps"]
-externalLink = ""
-series = []
-featuredImage = "/img/barandcraft-screen.jpg"
+tags = ["Bubble","Webflow","Apps"]
+images = ["/img/barandcraft-screen.jpg"]
+toc = false
 +++
 
 Bar and Craft's Whiskey Hunt is a directory of rare and fine whiskeys. [Visit whiskey hunt here.](https://www.barandcraft.com/tools/whiskey-hunt)

@@ -1,14 +1,10 @@
 +++
-draft = false
-date = 2022-03-02T14:28:37Z
+date = 2022-03-02
 title = "Project Lloyd"
 description = "A static site generator that turns Webflow staging sites into optimised static sites."
 slug = "lloyd"
-tags = ["Netlify","Static Sites"]
-categories = ["Developer Tools"]
-externalLink = ""
-series = []
-featuredImage = ""
+tags = ["Netlify","Static Sites","Developer Tools"]
+toc = false
 +++
 
 This is the "official" post to accompany the release of [Project Lloyd](https://github.com/well-made-uk/project-lloyd), a static site generator that takes a [Webflow](https://webflow.io) site and deploys it on [Netlify](https://netlify.app).

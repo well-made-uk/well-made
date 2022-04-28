@@ -1,15 +1,14 @@
-+++
-draft = false
-date = 2022-02-05T14:28:37Z
-title = "clever carbon"
-description = "What's your carbon footprint?"
-slug = "clever-carbon"
-tags = ["Wordpress","Elementor","Formidable"]
-categories = ["Websites"]
-externalLink = ""
-series = []
-featuredImage = "/img/cc-screen.jpg"
-+++
+---
+date: 2022-02-05
+title: "clever carbon"
+description: "What's your carbon footprint?"
+slug: "clever-carbon"
+tags: ["Wordpress","Elementor","Formidable","Websites"]
+images: [
+        /img/cc-screen.jpg
+        ]
+toc: false
+---
 
 clever carbon helps to enable #clevercarbondecisions by teaching people about their carbon footprint. [Visit clever carbon here.](https://clevercarbon.io)
 

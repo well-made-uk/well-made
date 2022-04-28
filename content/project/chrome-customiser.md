@@ -1,14 +1,10 @@
 +++
-draft = false
-date = 2022-04-14T13:24:37Z
+date = 2022-04-14
 title = "Chrome Customiser"
 description = "Your own custom internet"
 slug = "chrome-customiser"
-tags = ["Chrome"]
-categories = ["Developer Tools"]
-externalLink = ""
-series = []
-featuredImage = ""
+tags = ["Chrome","Developer Tools"]
+toc = false
 +++
 
 [View the project here.](https://github.com/well-made-uk/chrome-customiser)

@@ -1,14 +1,10 @@
 +++
-draft = false
-date = 2022-03-02T14:28:37Z
+date = 2022-03-02
 title = "Well-made.uk"
 description = "Well-made is made well by Ben Wilde, a web developer that makes well-made websites."
 slug = "well-made"
-tags = ["Hugo","Static Sites"]
-categories = ["Websites"]
-externalLink = ""
-series = []
-featuredImage = ""
+tags = ["Hugo","Static Sites","Websites"]
+toc = false
 +++
 
 Every year, I publish at least one large update to well-made.uk. I like to experiment with new technologies and designs, and keep things fresh. This year, the first big update focuses on content organisation and editorial process. Content management is now simpler and more straightforward, thanks to the new platform that powers the website: [a static site generator called Hugo](https://gohugo.io/).
