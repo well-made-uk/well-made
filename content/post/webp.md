@@ -4,8 +4,7 @@ date = 2021-09-07T14:28:37Z
 title = "Why I don't use WebP"
 description = "You guessed it - another thing I dislike."
 slug = "webp"
-tags = []
-categories = ["Dev"]
+tags = ["Dev"]
 externalLink = ""
 series = []
 +++

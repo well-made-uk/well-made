@@ -4,8 +4,7 @@ date = 2022-02-28T14:28:37Z
 title = "What are well-made websites?"
 description = "With so many ways to build a website, we need to take a moment to think about what's really important."
 slug = "start"
-tags = ["well-made.uk"]
-categories = ["Dev"]
+tags = ["well-made.uk","Dev"]
 externalLink = ""
 series = []
 +++

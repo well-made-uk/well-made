@@ -4,8 +4,7 @@ date = 2021-06-30T14:28:37Z
 title = "How many accounts do you need?"
 description = "I've got like 100 user accounts. I hate every single one of them."
 slug = "online-accounts"
-tags = []
-categories = ["Life"]
+tags = ["Life"]
 externalLink = ""
 series = []
 +++

@@ -4,8 +4,7 @@ date = 2021-12-11T14:28:37Z
 title = "WMUK 21.2 update"
 description = "The year of silliness and love."
 slug = "update-2021"
-tags = ["Update",'well-made.uk']
-categories = ["Dev"]
+tags = ["Update","well-made.uk","Dev"]
 externalLink = ""
 series = []
 +++

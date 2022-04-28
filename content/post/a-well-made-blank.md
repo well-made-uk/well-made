@@ -4,8 +4,7 @@ date = 2021-06-25T14:28:37Z
 title = "A well-made * blank *"
 description = "A look at what it means to make a well-made thing."
 slug = "blank"
-tags = ["well-made.uk"]
-categories = ["Dev"]
+tags = ["well-made.uk","Dev"]
 externalLink = ""
 series = []
 +++

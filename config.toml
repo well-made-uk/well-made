@@ -1,28 +1,33 @@
-baseURL                       = "https://example.com/"
+baseURL                       = "https://well-made.uk/"
 languageCode                  = "en"
-title                         = "well0made.uk"
+title                         = "well-made.uk"
 theme                         = "personal-site"
 summaryLength                 = 10
 
 [Author] # Used in authorbox
   name                        = "Ben Wilde"
-  bio                         = ""
-  avatar                      = "img/avatar.webp"
-  job                         = "Software Engineer"
+  bio                         = """
+  The internet is becoming more difficult to use, more intrusive, and more harmful for the environment.
+
+  I build better websites: low-code, privacy-conscious, fast, accessible, secure, and with an extremely low carbon footprint.
+  """
+  avatar                      = "img/avatar.png"
+  job                         = "Web Developer"
   gender                      = "male"
-  email                       = "jhon-doe@gmail.com"
+  email                       = "ben@well-made.uk"
 
 
 [Params]
-  subTitle                    = "Personal site, Blog, and Portfolio"
-  description                 = "Sebuah catatan dan blog pribadi saya. Saya juga akan membagi tentang pengalaman saya dan teknologi-teknolgi yang saya gunakan/pelajari atau yang sedang populer." # Site Description. Used in meta description
+  subTitle                    = "Well-made websites by Ben Wilde"
+  description                 = "I build better websites: low-code, privacy-conscious, fast, accessible, secure, and with an extremely low carbon footprint." # Site Description. Used in meta description
   images                      = ["img/avatar.webp"]
-  copyright                   = "Wisnuwiry" # Copyright holder, otherwise will use .Site.Title
+  copyright                   = "Ben Wilde" # Copyright holder, otherwise will use .Site.Title
+  copyrightlink               = "/"
   opengraph                   = true # Enable OpenGraph if true
   twitter_cards               = true # Enable Twitter Cards if true
   mainSections                = ["post"] # Set main page sections
   dateFormat                  = "January 02, 2006" # Change the format of dates
-  # customCSS                 = ["css/custom.css"] # Include custom CSS files
+  customCSS                 = ["css/custom.css"] # Include custom CSS files
   customJS                    = []
   mainMenuAlignment           = "right" # Align main menu (desktop version) to the right side
   authorbox                   = true # Show authorbox at bottom of single pages if true
@@ -34,20 +39,12 @@ summaryLength                 = 10
   fontUnit                    = "em"
   largestFontSize             = 2.5
   smallestFontSize            = 1
-  googleSearchConsole         = ""
-  # GoogleAnalytics             = ""
-  # fb_admins                   =
-  # fb_app_id                   =
   paginateLength              = 5
-  # adsenseId                   =
-
-  # Google Search custom, more info: https://cse.google.com/cse/all
-  customSearchId              = "004021659876411083349:a2ysxpichpc"
 
   endMessagePost              = "Wrong content? "
 
   # Link repo to edit content
-  editContentPageLink         = "https://github.com/wisnuwiry/personal-site-demo/edit/master/content/"
+  editContentPageLink         = "https://github.com/well-made-uk/well-made/edit/master/content/"
 
   # Formspree form contact id, more info: https://cse.google.com/cse/all
   formspreeId                 = ""
@@ -55,8 +52,8 @@ summaryLength                 = 10
 
 
 [Params.Hero]
-  title                       = "A Personal Site By Jhon Doe"
-  desc                        = "Welcome to my Blog :)"
+  title                       = "I'm Ben Wilde."
+  desc                        = "I build well-made websites."
 
 [Params.Entry]
   meta                        = ["date", "categories"] # Enable meta fields in given order
@@ -73,67 +70,59 @@ summaryLength                 = 10
 [menu]
 
 [[menu.main]]
-identifier = "Post"
-pre = "📝"
-url = "/post"
+identifier = "About"
+pre = "🐈‍⬛"
+url = "/about"
 weight = 1
 
 [[menu.main]]
-identifier = "Snippet"
-pre = "⚒️"
-url = "/snippet"
+identifier = "Posts"
+pre = "📝"
+url = "/post"
 weight = 2
 
 [[menu.main]]
-identifier = "Project"
+identifier = "Projects"
 pre = "🚧"
 url = "/project"
 weight = 3
 
 [[menu.main]]
-identifier = "About"
-pre = "😃"
-url = "/about"
+identifier = "Privacy"
+pre = "⚒️"
+url = "/google-free"
 weight = 4
 
 [[menu.main]]
 identifier = "Contact"
 pre = "🤙"
-url = "/contact"
+url = "mailto:ben@well-made.uk"
 weight = 5
 
 [Params.Breadcrumb]
-  enable                      = true # Enable breadcrumb block globally
+  enable                      = false # Enable breadcrumb block globally
   homeText                    = "Home" # Home node text
 
 [Params.Social]
-  twitter                     = "jhon-doe"
-  telegram                    = "jhon-doe"
+# twitter                     = "jhon-doe"
+# telegram                    = "jhon-doe"
 # instagram                   = "jhon-doe"
-  linkedin                    = "wisnu-saputra"
-  github                      = "jhon-doe"
-  gitlab                      = "jhon-doe"
-  medium                      = "jhon-doe"
-
-[Params.Share] # Entry Share block
-  facebook                    = true
-  twitter                     = true
-  reddit                      = true
-  telegram                    = true
-  linkedin                    = true
-  pinterest                   = true
+# linkedin                    = "wisnu-saputra"
+  github                      = "well-made-uk"
+# gitlab                      = "jhon-doe"
+# medium                      = "jhon-doe"
 
 # Web App Manifest settings
 # https://www.w3.org/TR/appmanifest/
 # https://developers.google.com/web/fundamentals/web-app-manifest/
 [Params.Manifest]
-  name                        = "Wisnuwiry"
-  shortName                   = "Wisnuwiry"
+  name                        = "well-made.uk"
+  shortName                   = "well-made"
   display                     = "standalone"
   startUrl                    = "/?utm_source=homescreen"
   backgroundColor             = "#8dc153"
   themeColor                  = "#1da1f2"
-  description                 = "Personal Site By Wisnuwiry"
+  description                 = "Well-made websites by Ben Wilde"
   orientation                 = "portrait"
   scope                       = "/"
 
@@ -150,7 +139,7 @@ weight = 5
 enableRobotsTXT               = true
 
 # Pagination
-Paginate                      = 3
+Paginate                      = 4
 
 
 # Code

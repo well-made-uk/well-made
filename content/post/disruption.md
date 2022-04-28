@@ -4,8 +4,7 @@ date = 2021-06-12T14:28:37Z
 title = "Disruption"
 description = "... and yet, I stubbornly do not have a smartphone."
 slug = "disruption"
-tags = []
-categories = ["Life"]
+tags = ["Life"]
 externalLink = ""
 series = []
 +++

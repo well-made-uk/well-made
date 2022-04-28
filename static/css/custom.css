@@ -1,0 +1,34 @@
+.notice:first-child {
+  margin-top:1em;
+}
+
+.notice:not(:first-child) {
+  margin-top:2em;
+}
+
+.notice > p {
+  display:block;
+  width:100%
+}
+.notice strong {
+  text-transform:uppercase;
+  border-bottom: 2px solid var(--link-color)
+}
+
+.hero {height:22rem}
+
+a[href]:not(:where(
+  /* exclude hash only links */
+  [href^="#"],
+  /* exclude relative but not double slash only links */
+  [href^="/"]:not([href^="//"]),
+  /* domains to exclude */
+  [href*="//well-made.uk"]
+)):not(.social__link):after {
+  content: ' ↗️';
+}
+
+.feed__item {padding:2.5em}
+.post__tag > a:hover {background-color:var(--link-color)}
+
+main .hero {background-image:url('/img/bg.webp');background-size:cover;background-position:center center;background-repeat:no-repeat;background-blend-mode: multiply;}

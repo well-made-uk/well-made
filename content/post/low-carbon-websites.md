@@ -4,8 +4,7 @@ date = 2021-06-15T14:28:37Z
 title = "Is this what a low-carbon website looks like?"
 description = "If this is a low carbon website, what about the flashy, heavy websites we're used to? Can they be low carbon too?"
 slug = "low-carbon-websites"
-tags = []
-categories = ["Dev"]
+tags = ["Dev"]
 externalLink = ""
 series = []
 +++

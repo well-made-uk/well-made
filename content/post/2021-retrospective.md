@@ -4,8 +4,7 @@ date = 2022-02-05T14:28:37Z
 title = "2021 Retrospective"
 description = "The year of silliness and love."
 slug = "2021"
-tags = ["Agency","Freelance","Employment"]
-categories = ["Life","Retrospective"]
+tags = ["Agency","Freelance","Employment","Life","Retrospective"]
 externalLink = ""
 series = ["Retrospective"]
 +++

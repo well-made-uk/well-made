@@ -4,8 +4,7 @@ date = 2021-06-15T14:28:37Z
 title = "Should links open in a new tab?"
 description = "What is the best policy for link opening behaviour?"
 slug = "new-tab"
-tags = []
-categories = ["Dev"]
+tags = ["Dev"]
 externalLink = ""
 series = []
 +++

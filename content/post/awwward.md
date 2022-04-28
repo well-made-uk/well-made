@@ -4,8 +4,7 @@ date = 2021-05-27T14:28:37Z
 title = "Winning an Awwward"
 description = "How should I feel about winning an Awwward?"
 slug = "awwward"
-tags = ["well-made.uk"]
-categories = ["Dev"]
+tags = ["well-made.uk","Dev"]
 externalLink = ""
 series = []
 +++

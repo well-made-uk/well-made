@@ -4,8 +4,7 @@ date = 2021-08-17T14:28:37Z
 title = "(Shortie) How to make an animated SVG logo"
 description = "What does a good header navigation look like, and why does it matter?"
 slug = "headers"
-tags = ["well-made.uk"]
-categories = ["Dev"]
+tags = ["well-made.uk","Dev"]
 externalLink = ""
 series = []
 +++

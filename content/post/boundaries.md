@@ -4,8 +4,7 @@ date = 2021-06-11T14:28:37Z
 title = "Boundaries and Mental Health for Developers"
 description = "I've recently been the victim of harassment from a client. How do you set boundaries to make sure that doesn't happen?"
 slug = "boundaries"
-tags = []
-categories = ["Dev","Life"]
+tags = ["Dev","Life"]
 externalLink = ""
 series = []
 +++

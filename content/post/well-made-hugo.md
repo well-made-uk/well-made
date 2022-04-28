@@ -4,8 +4,7 @@ date = 2022-03-02T14:28:37Z
 title = "How I used Hugo to build well-made"
 description = "Well-made.uk has switched to a different site generator."
 slug = "well-made-hugo"
-tags = ["well-made.uk"]
-categories = ["Dev"]
+tags = ["well-made.uk","Dev"]
 externalLink = ""
 series = []
 +++

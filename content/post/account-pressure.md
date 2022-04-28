@@ -4,8 +4,7 @@ date = 2021-08-11T14:28:37Z
 title = "Accounts and social pressure"
 description = "But we won't have this chance again!"
 slug = "account-pressure"
-tags = []
-categories = ["Life"]
+tags = ["Life"]
 externalLink = ""
 series = []
 +++

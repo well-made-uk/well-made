@@ -1,11 +1,11 @@
 +++
 draft = false
-date = 2022-02-28T14:28:37Z
+date = 2022-01-09
+lastmod = 2022-02-28
 title = "Project Lloyd"
 description = "The year of silliness and love."
 slug = "Lloyd"
-tags = ["Netlify"]
-categories = ["Dev"]
+tags = ["Netlify","Dev"]
 externalLink = ""
 series = []
 +++

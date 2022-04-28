@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class="no-js" lang="{{ .Site.LanguageCode | default "en-us" }}">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="{{ .Site.Params.Manifest.themeColor | default "#1da1f2" }}">
+	<title>{{ block "title" . }}{{ if not .IsHome }}{{ .Title }} | {{ end }} {{ .Site.Title }} {{ if .IsHome }}{{ .Site.Params.subTitle }}{{ end }}{{ end }}</title>
+	<meta name="description"
+		content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+	{{ template "_internal/schema.html" .}}
+	{{- $cssTheme := resources.Get "css/theme.css" }}
+	{{- $cssMain := resources.Get "css/main.css" }}
+	{{- $cssCode := resources.Get "css/code.css" }}
+	{{- $style := slice $cssTheme $cssMain $cssCode | resources.Concat "css/bundle.css" | resources.Minify}}
+	<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+	{{- range .Site.Params.customCSS }}
+	<link rel="stylesheet" href="{{ . | absURL }}">
+	{{- end }}
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ "/img/avatar.png" | absURL }}">
+	<link rel="icon" type="image/png" sizes="32x32" href="{{ "/img/avatar.png" | absURL }}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ "/img/avatar.png" | absURL }}">
+	<link rel="shortcut icon" href="{{ "/img/avatar.png" | absURL }}" type="image/png">
+	<link rel="icon" href="{{ "/img/avatar.png" | absURL }}" type="image/png">
+	<meta name="msapplication-TileColor" content="{{ .Site.Params.Manifest.themeColor | default "#8dc153" }}">
+	{{- with .OutputFormats.Get "rss" }}
+	{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
+	{{- end }}
+	{{- with ((.Site.GetPage "home").OutputFormats.Get "manifest") }}
+	<link rel="manifest" href="{{ "manifest.json" | absURL }}">
+	{{- end }}
+	{{ partial "json_ld.html" . }}
+	<meta content="true" name="MSSmartTagsPreventParsing">
+</head>
+
+<body class="">
+	<div class="site-container">
+		{{ partial "header" . }}
+		<main>
+			{{ block "main" . }}
+			{{- if or .Title .Content }}
+			<div class="page block">
+				{{ with .Title }}<h1 class="page__title">{{ . }}</h1>{{ end }}
+				{{ with .Content }}<div class="page__content{{ if not $.Title }} page__content--notitle{{ end }}">
+					{{ . }}</div>{{ end }}
+			</div>
+			{{ end }}
+			{{ end }}
+		</main>
+		{{ partial "footer" . }}
+	</div>
+	{{ partial "script.html" . }}
+</body>
+
+</html>

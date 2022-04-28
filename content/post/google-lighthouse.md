@@ -4,8 +4,7 @@ date = 2021-06-01T14:28:37Z
 title = "How to score 100 on Google Lighthouse"
 description = "How to use Lighthouse to make websites actually good."
 slug = "lighthouse"
-tags = ["well-made.uk"]
-categories = ["Dev"]
+tags = ["well-made.uk","Dev"]
 externalLink = ""
 series = []
 +++

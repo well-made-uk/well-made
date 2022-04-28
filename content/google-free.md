@@ -1,6 +1,7 @@
 +++
 title = 'Google Policy'
 description = 'Why Google services have no place in a well-made web project.'
+date = 2022-03-02
 +++
 
 This website does not require a privacy policy because it doesn't track or store any identifiable information from its users. I used the space normally used for a privacy policy to write my Google Policy instead.

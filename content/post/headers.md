@@ -4,8 +4,7 @@ date = 2021-06-07T14:28:37Z
 title = "Header navigations (and why I added one to my blog)"
 description = "What does a good header navigation look like, and why does it matter?"
 slug = "headers"
-tags = []
-categories = ["Dev"]
+tags = ["Dev"]
 externalLink = ""
 series = []
 +++
