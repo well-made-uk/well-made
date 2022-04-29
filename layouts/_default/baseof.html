@@ -18,11 +18,11 @@
 	{{- range .Site.Params.customCSS }}
 	<link rel="stylesheet" href="{{ . | absURL }}">
 	{{- end }}
-	<link rel="apple-touch-icon" sizes="180x180" href="{{ "/img/avatar.png" | absURL }}">
-	<link rel="icon" type="image/png" sizes="32x32" href="{{ "/img/avatar.png" | absURL }}">
-	<link rel="icon" type="image/png" sizes="16x16" href="{{ "/img/avatar.png" | absURL }}">
-	<link rel="shortcut icon" href="{{ "/img/avatar.png" | absURL }}" type="image/png">
-	<link rel="icon" href="{{ "/img/avatar.png" | absURL }}" type="image/png">
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ "/img/avatar.webp" | absURL }}">
+	<link rel="icon" type="image/png" sizes="32x32" href="{{ "/img/avatar.webp" | absURL }}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ "/img/avatar.webp" | absURL }}">
+	<link rel="shortcut icon" href="{{ "/img/avatar.webp" | absURL }}" type="image/png">
+	<link rel="icon" href="{{ "/img/avatar.webp" | absURL }}" type="image/png">
 	<meta name="msapplication-TileColor" content="{{ .Site.Params.Manifest.themeColor | default "#8dc153" }}">
 	{{- with .OutputFormats.Get "rss" }}
 	{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}

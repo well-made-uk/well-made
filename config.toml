@@ -11,7 +11,7 @@ summaryLength                 = 10
 
   I build better websites: low-code, privacy-conscious, fast, accessible, secure, and with an extremely low carbon footprint.
   """
-  avatar                      = "img/avatar.png"
+  avatar                      = "img/avatar.webp"
   job                         = "Web Developer"
   gender                      = "male"
   email                       = "ben@well-made.uk"
@@ -20,7 +20,7 @@ summaryLength                 = 10
 [Params]
   subTitle                    = "Well-made websites by Ben Wilde"
   description                 = "I build better websites: low-code, privacy-conscious, fast, accessible, secure, and with an extremely low carbon footprint." # Site Description. Used in meta description
-  images                      = ["img/avatar.png"]
+  images                      = ["img/avatar.webp"]
   copyright                   = "Ben Wilde" # Copyright holder, otherwise will use .Site.Title
   copyrightlink               = "/"
   opengraph                   = true # Enable OpenGraph if true
