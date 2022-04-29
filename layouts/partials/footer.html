@@ -1,5 +1,5 @@
 <footer class="footer">
 	{{- partial "footer_social.html" . }}
 	{{- partial "footer_menu.html" . }}
-	<div class="footer__copyright">© {{ now.Format "2006" }} <a href="{{ .Site.Params.copyrightlink}}">{{ .Site.Params.copyright | default .Site.Title }}</a> <span class="footer__copyright-credits">{{ T "footer_credits" | safeHTML }}</span> | Created with ❤️ <a href="//gohugo.io">Hugo</a></div>
+	<div class="footer__copyright">© {{ now.Format "2006" }} <a href="{{ .Site.Params.copyrightlink}}">{{ .Site.Params.copyright | default .Site.Title }}</a> <span class="footer__copyright-credits">{{ T "footer_credits" | safeHTML }}</span> | <a href="/google-free">Privacy Policy</a> | Created with ❤️ <a href="//gohugo.io">Hugo</a>
 </footer>
