@@ -41,10 +41,7 @@ summaryLength                 = 10
   smallestFontSize            = 1
   paginateLength              = 5
 
-  endMessagePost              = "Wrong content? "
-
-  # Link repo to edit content
-  editContentPageLink         = "https://github.com/well-made-uk/well-made/edit/master/content/"
+  endMessagePost              = "Wrong content?"
 
   # Formspree form contact id, more info: https://cse.google.com/cse/all
   formspreeId                 = ""
@@ -86,12 +83,6 @@ identifier = "Projects"
 pre = "🚧"
 url = "/project"
 weight = 3
-
-[[menu.main]]
-identifier = "Privacy"
-pre = "⚒️"
-url = "/google-free"
-weight = 4
 
 [[menu.main]]
 identifier = "Contact"
