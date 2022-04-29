@@ -4,9 +4,7 @@ title: "clever carbon"
 description: "What's your carbon footprint?"
 slug: "clever-carbon"
 tags: ["Wordpress","Elementor","Formidable","Websites"]
-images: [
-        /img/cc-screen.jpg
-        ]
+images: [/img/cc-screen.jpg]
 toc: false
 ---
 
