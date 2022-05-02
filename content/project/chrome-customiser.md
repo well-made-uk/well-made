@@ -9,7 +9,7 @@ toc = false
 
 [View the project here.](https://github.com/well-made-uk/chrome-customiser)
 
-Nothing spectacular - I just wanted to add some custom CSS to Brave (a Chromium-based browser) to remove age elements on my frequently-visited sites
+Nothing spectacular - I just wanted to add some custom CSS to Brave (a Chromium-based browser) to remove page elements on my frequently-visited sites
 
 The main issue was YouTube, which I find really useful for informational purposes, but I strongly dislike being recommended/forced to watch videos I didn't specifically choose. I also don't have a Google account, so all account-related functionality just becomes an inconvenience, and because I disabled trackers and cookies, YouTube doesn't remember that I prefer to watch in Cinema Mode at a low quality setting, and disable Autoplay. I wanted to remove all recommendations and page clutter.
 
