@@ -8,7 +8,7 @@ share: false
 page: true
 ---
 
-I'm a web developer who cares *a lot* about websites, the internet, and digital privacy. I make websites that are fast, accessible, and [respect users' data](/google-free/).
+I'm Ben Wilde. I'm a web developer who cares *a lot* about websites, the internet, and digital privacy. I make websites that are fast, accessible, and [respect users' data](/google-free/).
 
 I build websites with:
 
