@@ -32,7 +32,7 @@ a[href]:not(:where(
 .post__tag > a:hover {background-color:var(--link-color)!important;color:var(--card-color)!important}
 .page__content > .post__tag > a {background-color:var(--white-color)!important;}.page__content > .post__tag > a:hover {background-color:var(--link-color)!important;}
 
-main .hero {background-color:#375974;background-image:url('/img/bg.webp');background-size:cover;background-position:center center;background-repeat:no-repeat;background-blend-mode: multiply;}
+main .hero {background-color:#375974;background-image:url('/img/bg.svg');background-size:cover;background-position:center center;background-repeat:no-repeat;background-blend-mode: multiply;}
 .light-theme main .hero {background-image:unset}
 .light-theme .hero .wrapper > * {color:white;}
 .top {padding:0 9vw;}

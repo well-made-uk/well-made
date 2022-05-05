@@ -1,4 +1,4 @@
-html {background:#FDCE2E;font-family:'Helvetica', sans-serif;font-size:15px}
+html {background:#FDCE2E;background-image:url('/img/bg.svg');background-size:cover;background-position:center;background-attachment:fixed;font-family:'Helvetica', sans-serif;font-size:15px}
 body {
   background:white;
   padding:10px 20px 40px 30px;
