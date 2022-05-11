@@ -170,10 +170,10 @@ Paginate                      = 4
     taskLists                 = true
   [markup.highlight]
     codeFences                = true
-    guessSyntax               = false
+    guessSyntax               = true
     hl_Lines                  = ""
     lineNoStart               = 1
-    lineNos                   = false
+    lineNos                   = true
     lineNumbersInTable        = false
     noClasses                 = false
     style                     = "dracula"
