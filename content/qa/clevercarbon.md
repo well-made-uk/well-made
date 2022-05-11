@@ -7,9 +7,9 @@ items:
     - Does the quiz allow completion?
     - Are the results rendering correctly?
     - Check the console sources for -
-    - * select.js
-    - * Custom scripts
-    - * Custom Styling
+    - select.js
+    - Custom scripts
+    - Custom Styling
   - section: Script
     contents:
     - Is Matomo loading?
