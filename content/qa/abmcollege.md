@@ -40,8 +40,7 @@ items:
   - section: Security
     contents:
     - Are any locked-off areas secure?
-    - Check a few pages for class clashes
-    - 'Is chatbot running?'
+    - Are any CORS errors logged?
   - section: Rendering
     contents:
     - Chrome (Mac)
