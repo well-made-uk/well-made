@@ -13,7 +13,7 @@
 					<article class="entry" id="article">
 						<div class="entry__content">
 							<style>.progress-container{display:none}input:checked+label{text-decoration: line-through;}</style>
-						{{ if .Params.link }}<a href="{{ .Params.link | safeURL }}" target="_blank" rel="nofollow noopener">{{ end }}<h1 style="display:inline-block">{{ .Params.title }} QA Checklist</h1>{{ if .Params.link }}</a>{{ end }}
+						<h1 style="display:inline-block">{{ if .Params.link }}<a href="{{ .Params.link | safeURL }}" target="_blank" rel="nofollow noopener">{{ end }}{{ .Params.title }} QA Checklist{{ if .Params.link }}</a>{{ end }}</h1>
 						    {{ with .Params.items }}
 						    <ul id="items-list" style="list-style-type:none;padding-inline-start: 0;margin-left:0;">
 						      {{ range . }}
