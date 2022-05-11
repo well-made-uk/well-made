@@ -287,3 +287,7 @@ a[target="_blank"]:not(.tech-logo)::after {
 .centered .about {
   text-align:left;
 }
+
+@media print {
+   .search {display:none;}
+}
