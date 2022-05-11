@@ -1,3 +1,5 @@
-<a class="logo" href="{{ "" | relLangURL }}" title="{{ .Site.Title }}">
+{{ if eq .Section "qa"}}<h1 class="logo" style="margin-top:unset">{{ if .Params.link }}<a href="{{ .Params.link | safeURL }}" target="_blank" rel="nofollow noopener">{{ end }}QA Checklist: {{ .Params.title }}{{ if .Params.link }}</a>{{ end }}</h1>
+{{ else }}<a class="logo" href="{{ "" | relLangURL }}" title="{{ .Site.Title }}">
     <img src="{{ .Site.Author.avatar | relURL}}" alt="{{ .Site.Title }}" class="lazyload" data-src="{{ .Site.Author.avatar | relURL}}">
 </a>
+{{ end }}
