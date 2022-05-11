@@ -1,0 +1,46 @@
+{{ define "main" }}
+		{{ if .Params.page }}
+		<div class="wrapper post__entry">
+			<div class="single block">
+				<article class="entry">
+			</div>
+		</div>
+		{{ else }}
+		{{ partial "header_indicator.html" . }}
+		<div class="content">
+			<div class="wrapper post__entry">
+				<div class="single block">
+					<article class="entry" id="article">
+						<div class="entry__content">
+							<style>.progress-container{display:none}.post__entry{padding-top:0;}input:checked+label{text-decoration: line-through;}</style>
+						<h1>{{ .Params.title }} QA Checklist</h1>
+						    {{ with .Params.items }}
+						    <ul id="items-list" style="list-style-type:none;padding-inline-start: 0;margin-left:0;">
+						      {{ range . }}
+										<h2 style="font-size:1rem;margin-bottom:10px;">{{ .section }}</h2>
+										{{ range .contents }}
+						      <li class="item">
+						        <input type="checkbox" id="{{ . }}" name="{{ . }}">
+						        <label for="{{ . }}">{{ . }}</label>
+						      </li>
+									{{ end }}
+						      {{ end }}
+						    </ul>
+						    {{ end }}
+						</div>
+						{{ if or (.Param "share") (isset $.Params "tags") }}
+						<footer class="entry__footer">
+							{{ partial "entry/tags.html" . }}
+							<!-- {{ partial "entry/share.html" . }} -->
+							{{ partial "authorbox.html" . }}
+						</footer>
+						{{ end }}
+					</article>
+					<!-- {{ partial "next_prev.html" .}} -->
+				</div>
+			</div>
+		</div>
+		{{ partial "related.html" . }}
+		<!-- {{ partial "comments.html" . }} -->
+		{{ end }}
+	{{ end }}
