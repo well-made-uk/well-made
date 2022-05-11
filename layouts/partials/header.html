@@ -1,0 +1,5 @@
+<header class="top" id="js-header">
+	{{ partial "header_logo.html" . }}
+	{{ if eq .Section "qa"}} {{ else }} {{ partial "header_menu.html" . }} {{ end }}
+	{{ partial "header_search.html" . }}
+</header>
