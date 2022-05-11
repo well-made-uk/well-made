@@ -1,13 +1,22 @@
-html {background:#FDCE2E;background-image:url('/img/bg.svg');background-size:cover;background-position:center;background-attachment:fixed;font-family:'Helvetica', sans-serif;font-size:15px}
+html {background:#F64A4B;background-image:url('/img/bg.svg');background-size:cover;background-position:center;background-attachment:fixed;font-family:'Helvetica', sans-serif;font-size:15px}
 body {
+  font-family:jost,helvetica,helvetica neue,segoe ui,helvetica,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,fira sans,droid sans,helvetica neue,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
   background:white;
-  padding:10px 20px 40px 30px;
-  max-width:900px;
+  padding:1rem 3rem 3rem 3rem;
+  max-width:800px;
   margin:60px auto;
   border-radius:8px;
   box-shadow:
-    2.1px 2.6px 3.6px rgba(0, 0, 0, 0.024),
-    5.8px 7.1px 10px rgba(0, 0, 0, 0.035)
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  100px 100px 80px rgba(0, 0, 0, 0.07)
+}
+@font-face {
+  font-family: "Gilbert";
+  src: url("/fonts/Gilbert.woff2") format("woff2");
 }
 table {
   background:white;
@@ -23,12 +32,13 @@ table,td,th {border: 1px solid #3b3b3b;}
 td:not(:last-child),th {padding: 1em;vertical-align: top;text-align: left}
 td:not([class]):last-child {padding: 0 1em}
 
-h1{font-size:2.8rem}
-h2{font-size:1.8rem;padding-left:15px;border-left:3px solid #FDCE2E;margin-bottom:10px}
+h1{display:none;}
+h2{font-size:2.8rem;margin-bottom:10px;font-family:'Gilbert';border-bottom:6px solid #F64A4B;display:inline-block}
 h3{font-size:1.6rem}
 h4{font-size:1.6rem}
 h5{font-size:1.4rem}
 
-dt {font-weight:bold}
+dt {font-weight:bold;border-bottom:2px solid #4E8057;display:inline-block;margin-bottom:4px}
+dd {margin-inline-start: 0}
 dd:not(:last-child) {margin-bottom:10px}
 main > div {margin-bottom:20px}
