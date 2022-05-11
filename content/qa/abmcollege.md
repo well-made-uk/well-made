@@ -1,5 +1,6 @@
 ---
 title: 'ABM College'
+link: 'https://abmcollege.com'
 items:
   - section: Script
     contents:
