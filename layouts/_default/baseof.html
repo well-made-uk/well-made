@@ -36,7 +36,7 @@
 
 <body class="">
 	<div class="site-container">
-		{{ partial "header" . }}
+		{{ if eq .Section "qa"}} {{ else }} {{ partial "header" . }} {{ end }}
 		<main>
 			{{ block "main" . }}
 			{{- if or .Title .Content }}
