@@ -1,0 +1,25 @@
+{
+    "@type":        "Evaluation",
+    "@language":    "en",
+    "dct:title":    "Evaluation of example.org",
+    "dct:summary":  "This website is very accessible.",
+    "dct:creator":  "John Doe",
+    "dct:date":     "2008-12-11",
+    "commissioner": "Example Inc.",
+    "WCAG2:reliedupondef": [
+        { /* WCAG2:technologydef 1 */ },
+        { /* WCAG2:technologydef 2 */ }
+    ],
+    "step1":        { /* EvaluationScope */ },
+    "step2a":       "Home, contact",
+    "step2b":       "The web shop",
+    "step2c":       "PDF, tables, video's",
+    "step2e":       "Copyright page, Accessibility statement",
+    "step3a":       { /* Sample (structured) */ },
+    "step3b":       { /* Sample (random) */ },
+    "step4": [
+        { /* earl:Assertion 1 */ },
+        { /* earl:Assertion 2 */ }
+    ],
+    "step5b":       "Results of the evaluation can be found at example.org/archive/123"
+}
